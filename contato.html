@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Pet-code</title>
+    <link rel="icon" href="Pet-Code.png" type="image/png">
+    <link rel="stylesheet" href="Css/stylecontato.css">
+</head>
+
+<body>
+    <a href="index.html">
+        <img class="pet__logo" src="Imagens/icons8-dog-park-100.png" alt="Logo Pet" />
+    </a> 
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Pet-code</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="cadastro.html">Cadastrar</a></li>
+                    <li><a href="videos.html">Vídeos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="contato" class="secao-padrao">
+            <h2>
+                <img src="Imagens/icons8-phone-50.png" alt="Ícone Telefone"> 
+                Fale Conosco
+            </h2>
+            <p>Tem alguma dúvida sobre o projeto, sugestão de melhoria ou precisa de suporte para cadastro? Envie uma mensagem e entraremos em contato!</p>
+
+            <form class="formulario-contato" action="#" method="POST">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione um Assunto</option>
+                    <option value="duvida_geral">Dúvida Geral</option>
+                    <option value="suporte_cadastro">Suporte de Cadastro</option>
+                    <option value="sugestao">Sugestão/Parceria</option>
+                    <option value="relato_problema">Relato de Problema</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+
+                <button type="submit" class="btn btn-principal">Enviar Mensagem</button>
+            </form>
+
+            <div class="informacoes-contato">
+                <h3>Informações Adicionais</h3>
+                <p><strong>E-mail de Suporte (Fictício):</strong></p>
+                <a href="mailto:suporte@petcode.com.br">
+                    suporte@petcode.com.br
+                </a>
+                <p><strong>Nosso Foco:</strong> Projeto acadêmico focado em conscientização e bem-estar animal em Mogi das Cruzes e região.</p>
+            </div>
+        </section>
+
+        <section class="mapa container">
+            <h2>
+                <img src="Imagens/icons8-location-48.png" alt="Ícone Localização">
+                Nossa Localização
+            </h2>
+            <p>Atuamos na região de Mogi das Cruzes - SP. Veja o mapa abaixo:</p>
+
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.686706255081!2d-46.18835662538606!3d-23.50947635978806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce8b3f9fcd6f2f%3A0x3e2167f5c3b7b06b!2sUniversidade%20de%20Mogi%20das%20Cruzes!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+                allowfullscreen 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p><strong>Projeto Acadêmico UMC - Pet-code</strong> | Mogi das Cruzes - SP</p>
+        <p>Integrantes: Ana Julia Pinheiro da Silva, Giovanni Almeida Santos, Evelyn Kraus dos Santos.</p>
+        <p>&copy; 2025 Pet-code | Incentivando a Conscientização e o Cuidado Animal.</p>
+    </footer>
+</body>
+</html>

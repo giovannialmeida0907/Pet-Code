@@ -1,0 +1,227 @@
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #fffaf5;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #ff7f50;
+    color: white;
+    padding: 15px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+/* Logo da Pet */
+.pet__logo {
+    width: 80px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Títulos com ícone ao lado */
+h2 img {
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px 0;
+}
+
+/* Seção de serviços oferecidos */
+#servicos-oferecidos {
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+    padding: 20px;
+    background-color: #fff8f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#servicos-oferecidos h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+#servicos-oferecidos h2 img {
+    margin-right: 10px;
+}
+
+#servicos-oferecidos p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Lista de serviços */
+.lista-servicos {
+    margin-top: 20px;
+}
+
+.lista-servicos h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #ff7f50;
+    font-size: 1.5em;
+}
+
+.lista-servicos ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.lista-servicos li {
+    margin-bottom: 10px;
+}
+
+/* Seção de mapa */
+.mapa {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.mapa h2 {
+    margin-bottom: 10px;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapa p {
+    margin-bottom: 20px;
+}
+
+.mapa iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    border: 0;
+    border-radius: 10px;
+}
+
+/* Botões de ação no mapa */
+.botoes-mapa-acao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-primario-mapa {
+    display: flex;
+    align-items: center;
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primario-mapa img {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+}
+
+.btn-primario-mapa:hover {
+    background-color: #ff9966;
+}
+
+/* Botão secundário de cadastro de parceria */
+.btn-secundario {
+    display: inline-block;
+    margin: 30px auto;
+    padding: 15px 25px;
+    background-color: #ff7f50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.btn-secundario:hover {
+    background-color: #ff9966;
+}
+
+/* Rodapé */
+footer {
+    background-color: #ff7f50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.95em;
+}
+
+/* Resposividade e ajustes gerais */
+@media(max-width: 768px){
+    .header .container,
+    #servicos-oferecidos,
+    .mapa {
+        width: 95%;
+        padding: 10px;
+    }
+    #servicos-oferecidos h2,
+    .mapa h2 {
+        font-size: 1.5em;
+    }
+    .botoes-mapa-acao {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-primario-mapa {
+        width: 100%;
+        justify-content: center;
+    }
+
+}

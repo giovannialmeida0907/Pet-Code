@@ -1,0 +1,238 @@
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #fffaf5;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #ff7f50;
+    color: white;
+    padding: 15px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+/* Container genérico */
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Logo da pet */
+.pet__logo {
+    width: 80px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Títulos com ícone ao lado */
+h2 img {
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Seção de chamada-ação (hero) */
+.hero {
+    /* Pode adicionar estilos adicionais aqui se necessário */
+}
+
+/* Seção com fundo de imagem dos cachorros e texto centralizado */
+.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('Imagens/'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    height: 80vh; 
+    background-color: #ff7f50; /* fallback */
+    position: relative; /* para posicionar o conteúdo centralizado */
+    z-index: 1;
+}
+
+/* Conteúdo dentro da hero-section */
+.hero-content {
+    position: absolute; /* Posição absoluta para ficar sobre a imagem */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: left; /* Alinhamento do seu exemplo */
+    max-width: 600px; /* Limita a largura do texto */
+    width: 90%;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* Botão na hero-section */
+.hero-section .button {
+    background-color: #ff7f50; 
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Próxima seção (sem estilos específicos, mas pode ser customizada) */
+.proxima-secao {
+    /* adicione estilos se desejar */
+}
+
+/* Seção "Sobre" */
+.sobre {
+    margin-top: 40px;
+}
+
+.sobre h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.sobre article {
+    background-color: #fff8f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.sobre section {
+    margin-bottom: 20px;
+}
+
+.sobre h3 {
+    margin-top: 0;
+    color: #ff7f50;
+}
+
+.sobre p {
+    line-height: 1.6;
+}
+
+/* Pilares da plataforma */
+#pilares {
+    margin-top: 40px;
+}
+
+#pilares h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+#pilares dl {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#pilares dt {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #ff7f50;
+}
+
+#pilares dd {
+    margin: 0 0 10px 20px;
+    line-height: 1.5;
+}
+
+/* Perguntas frequentes */
+#faq {
+    margin-top: 40px;
+}
+
+#faq h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+#faq details {
+    background-color: #fff8f0;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+#faq summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#faq p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #ff7f50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* Estilos adicionais para responsividade ou elementos específicos podem ser adicionados aqui */
+
+/* Estilo para botões principais */
+.btn-principal {
+    display: inline-block;
+    background-color: #ff7f50;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-principal:hover {
+    background-color: #ff9966;
+}
