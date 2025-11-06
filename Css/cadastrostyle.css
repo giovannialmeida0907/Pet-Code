@@ -44,11 +44,54 @@ body {
 }
 
 /* Logo da pet */
-.pet__logo {
-    width: 80px;
-    display: block;
-    margin: 10px auto;
+/* === Área da logo e texto === */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    gap: 10px; /* espaçamento entre imagem e texto */
 }
+
+.pet__logo {
+    width: 60px;  /* diminui um pouco pra equilibrar */
+    height: auto;
+    margin: 0; /* remove centralização anterior */
+}
+
+.logo {
+    font-size: 1.8em;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* === Ajustes no header existente === */
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
 
 /* Container principal */
 main {
@@ -226,4 +269,143 @@ footer p {
     .secao-cadastro, .secao-login {
         max-width: 90%;
     }
+}
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+/* ============================
+   Estilo Geral do Formulário
+============================ */
+.form-cadastro, .form-login {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff8f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* ============================
+   Títulos com Ícones
+============================ */
+.form-cadastro h3,
+.secao-cadastro h2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    gap: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.form-cadastro h3 img,
+.secao-cadastro h2 img {
+    width: 32px;
+    height: 32px;
+}
+
+/* ============================
+   Inputs e Selects
+============================ */
+.form-cadastro input[type="text"],
+.form-cadastro input[type="email"],
+.form-cadastro input[type="password"],
+.form-cadastro input[type="number"],
+.form-cadastro select,
+.form-login input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.form-cadastro input:focus,
+.form-cadastro select:focus,
+.form-login input:focus {
+    outline: none;
+    border-color: #ff8c42;
+    box-shadow: 0 0 5px rgba(255, 140, 66, 0.5);
+}
+
+/* ============================
+   Botões
+============================ */
+.btn-principal {
+    background-color: #ff8c42;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.btn-principal:hover {
+    background-color: #e67e22;
+}
+
+.btn-secundario {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.btn-secundario:hover {
+    background-color: #ff9966;
+}
+
+/* Botão Google */
+.btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn-google img {
+    display: inline-block;
+}
+
+/* ============================
+   Texto de Login e Links
+============================ */
+.texto-login, .esqueceu-senha {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.texto-login a, .esqueceu-senha a {
+    color: #ff8c42;
+    text-decoration: none;
+}
+
+.texto-login a:hover, .esqueceu-senha a:hover {
+    text-decoration: underline;
 }

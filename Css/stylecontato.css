@@ -41,11 +41,54 @@
             margin: 20px auto;
         }
 
-        .pet__logo {
-            width: 80px;
-            display: block;
-            margin: 10px auto;
-        }
+        /* === Área da logo e texto === */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    gap: 10px; /* espaçamento entre imagem e texto */
+}
+
+.pet__logo {
+    width: 60px;  /* diminui um pouco pra equilibrar */
+    height: auto;
+    margin: 0; /* remove centralização anterior */
+}
+
+.logo {
+    font-size: 1.8em;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* === Ajustes no header existente === */
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
 
         h2 img {
             width: 30px;
@@ -154,3 +197,16 @@
         gap: 10px;
         }
         }
+        @media (max-width: 768px) {
+            .header .container {
+                flex-direction: column;
+                gap: 10px;
+            }
+        
+            .nav ul {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+        }
+        
