@@ -34,7 +34,7 @@ body {
 }
 
 .header a:hover {
-    text-decoration: underline;
+    text-decoration: none; /*tirei o underline*/
 }
 
 /* Container genérico */
@@ -89,7 +89,7 @@ body {
 }
 
 .nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
@@ -103,7 +103,6 @@ main {
     margin: 0 auto;
 }
 
-/* Seções de cadastro e login */
 .secao-cadastro, .secao-login {
     background-color: #fff8f0;
     padding: 20px;
@@ -238,7 +237,7 @@ button {
 
 /* Rodapé */
 footer {
-    background-color: #ff7f50;
+    background-color: ;
     color: white;
     padding: 20px;
     text-align: center;
@@ -250,7 +249,124 @@ footer p {
     font-size: 0.95em;
 }
 
-/* Responsividade */
+.form-cadastro, .form-login {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff8f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+
+.form-cadastro h3,
+.secao-cadastro h2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    gap: 10px; /* espaço entre o icone e o texto */
+}
+
+.form-cadastro h3 img,
+.secao-cadastro h2 img {
+    width: 32px;
+    height: 32px;
+}
+
+
+
+.form-cadastro input[type="text"],
+.form-cadastro input[type="email"],
+.form-cadastro input[type="password"],
+.form-cadastro input[type="number"],
+.form-cadastro select,
+.form-login input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.form-cadastro input:focus,
+.form-cadastro select:focus,
+.form-login input:focus {
+    outline: none;
+    border-color: #ff9966;
+    box-shadow: 0 0 5px rgba(255, 140, 66, 0.5);
+}
+
+
+
+
+.btn-principal {
+    background-color: #ff9966;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.btn-principal:hover {
+    background-color: #d3632a;
+}
+
+.btn-secundario {
+    background-color: #ff9966;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.btn-secundario:hover {
+    background-color: #d3632a;
+}
+
+/* Botão Google */
+.btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn-google img {
+    display: inline-block;
+}
+
+.texto-login, .esqueceu-senha {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.texto-login a, .esqueceu-senha a {
+    color: #ff8c42;
+    text-decoration: none;
+}
+
+.texto-login a:hover, .esqueceu-senha a:hover {
+    text-decoration: underline;
+}
+
 @media(max-width: 768px){
     main {
         flex-direction: column;
@@ -281,131 +397,4 @@ footer p {
         gap: 10px;
         align-items: center;
     }
-}
-
-/* ============================
-   Estilo Geral do Formulário
-============================ */
-.form-cadastro, .form-login {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff8f0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    font-family: Arial, sans-serif;
-}
-
-/* ============================
-   Títulos com Ícones
-============================ */
-.form-cadastro h3,
-.secao-cadastro h2 {
-    display: flex;
-    align-items: center;
-    font-size: 1.5em;
-    margin-bottom: 15px;
-    gap: 10px; /* Espaço entre o ícone e o texto */
-}
-
-.form-cadastro h3 img,
-.secao-cadastro h2 img {
-    width: 32px;
-    height: 32px;
-}
-
-/* ============================
-   Inputs e Selects
-============================ */
-.form-cadastro input[type="text"],
-.form-cadastro input[type="email"],
-.form-cadastro input[type="password"],
-.form-cadastro input[type="number"],
-.form-cadastro select,
-.form-login input {
-    width: 100%;
-    padding: 10px 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 1em;
-    box-sizing: border-box;
-}
-
-.form-cadastro input:focus,
-.form-cadastro select:focus,
-.form-login input:focus {
-    outline: none;
-    border-color: #ff8c42;
-    box-shadow: 0 0 5px rgba(255, 140, 66, 0.5);
-}
-
-/* ============================
-   Botões
-============================ */
-.btn-principal {
-    background-color: #ff8c42;
-    color: white;
-    border: none;
-    padding: 12px;
-    width: 100%;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.1em;
-    margin-top: 10px;
-}
-
-.btn-principal:hover {
-    background-color: #e67e22;
-}
-
-.btn-secundario {
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    padding: 12px;
-    width: 100%;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.1em;
-}
-
-.btn-secundario:hover {
-    background-color: #ff9966;
-}
-
-/* Botão Google */
-.btn-google {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 100%;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1em;
-}
-
-.btn-google img {
-    display: inline-block;
-}
-
-/* ============================
-   Texto de Login e Links
-============================ */
-.texto-login, .esqueceu-senha {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.texto-login a, .esqueceu-senha a {
-    color: #ff8c42;
-    text-decoration: none;
-}
-
-.texto-login a:hover, .esqueceu-senha a:hover {
-    text-decoration: underline;
 }

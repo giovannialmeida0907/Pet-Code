@@ -35,7 +35,7 @@ body {
 }
 
 .header a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
@@ -86,7 +86,7 @@ body {
 }
 
 .nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
@@ -152,9 +152,9 @@ h2 {
     display: inline-block;
 }
 
-/* Próxima seção (sem estilos específicos, mas pode ser customizada) */
+/* Próxima seção (sem estilos específicos, mas pode ser customizada depois ) */
 .proxima-secao {
-    /* adicione estilos se desejar */
+    /* adicionae estilos */
 }
 
 /* Seção "Sobre" */

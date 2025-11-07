@@ -33,7 +33,7 @@
         }
 
         .header a:hover {
-             text-decoration: underline;
+             text-decoration: none;
         }
 
         .container {
@@ -41,7 +41,7 @@
             margin: 20px auto;
         }
 
-        /* === Área da logo e texto === */
+        /* Área da logo e texto */
 .navbar-brand {
     display: flex;
     align-items: center;
@@ -62,7 +62,7 @@
     font-weight: bold;
 }
 
-/* === Ajustes no header existente === */
+/* Ajustes no header existente */
 .header .container {
     display: flex;
     justify-content: space-between;
@@ -86,7 +86,7 @@
 }
 
 .nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
@@ -168,7 +168,7 @@
             margin: 0 auto;
         }
 
-        /* RODAPÉ */
+        /* RODAPe */
         footer {
         background-color: #ff7f50;
         color: white;
