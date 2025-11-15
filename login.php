@@ -143,14 +143,12 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | Pet-code</title>
-    <style>
-        .message-success { color: green; border: 1px solid green; padding: 10px; margin-bottom: 20px; }
-        .message-error { color: red; border: 1px solid red; padding: 10px; margin-bottom: 20px; }
-    </style>
+    <title>Cadastro | Pet-code</title>
+    <link rel="icon" href="Imagens/novo-logo.png" type="image/png">
+    <link rel="stylesheet" href="Css/cadastrostyle.css">
 </head>
 <body>
-    
+    <!-- Cabeçalho -->
     <header class="header">
         <div class="container">
             <a href="index.html" class="navbar-brand">
@@ -161,7 +159,7 @@ $conn->close();
                 <ul>
                     <li><a href="index.html">Início</a></li>
                     <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="cadastro.php">Cadastrar</a></li>
+                    <li><a href="cadastro.html">Cadastrar</a></li>
                     <li><a href="comunidade.html">Comunidade</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
@@ -169,22 +167,17 @@ $conn->close();
         </div>
     </header>
 
+    <!-- Conteúdo Principal -->
     <main class="container">
 
-        <?php if (!empty($message)): ?>
-            <div class="message-<?php echo $message_type; ?>">
-                <?php echo $message; ?>
-            </div>
-        <?php endif; ?>
-
+        <!-- Seção Cadastro -->
         <section class="secao-cadastro">
             <h2>Crie sua conta na Pet-code 
                 <img src="Imagens/icons8-cachorro-novo-cadastro.png" alt="Ícone dog cadastro">
             </h2>
             <p>Cadastre-se para acessar todos os recursos da plataforma e interagir com outros tutores!</p>
 
-            <form class="form-cadastro" action="" method="POST">
-                <input type="hidden" name="register" value="1"> 
+            <form class="form-cadastro" action="#" method="POST">
 
                 <h3>
                     <img src="Imagens/icons8-pessoa-do-sexo-masculino-64-cadastro.png" alt="Ícone person cadastro">
@@ -209,9 +202,9 @@ $conn->close();
                 <label for="pergunta">Escolha uma pergunta:</label>
                 <select id="pergunta" name="pergunta" required>
                     <option value="">Selecione...</option>
-                    <option value="Qual foi o nome do seu primeiro animal de estimação?">Qual foi o nome do seu primeiro animal de estimação?</option>
-                    <option value="Qual era o nome da sua escola primária?">Qual era o nome da sua escola primária?</option>
-                    <option value="Em que cidade você nasceu?">Em que cidade você nasceu?</option>
+                    <option value="animal">Qual foi o nome do seu primeiro animal de estimação?</option>
+                    <option value="escola">Qual era o nome da sua escola primária?</option>
+                    <option value="cidade">Em que cidade você nasceu?</option>
                 </select>
 
                 <label for="resposta">Resposta:</label>
@@ -223,17 +216,21 @@ $conn->close();
                 </h3>
                 <input type="text" name="nome_pet" placeholder="Nome do pet">
                 <input type="text" name="especie" placeholder="Espécie (ex: cão, gato)">
+<<<<<<< HEAD
                 <input type="number" name="idade" placeholder="Idade do pet (em anos)" min="0" max="20">
+=======
+                <input type="number" name="idade" placeholder="Idade do pet" min="0">
+>>>>>>> 2489eb1ae8cd4b77731ff014041f14ab4f2a7f5a
 
                 <button type="submit" class="btn btn-principal">Cadastrar</button>
                 <p class="texto-login">Já tem uma conta? <a href="#">Faça login</a></p>
             </form>
         </section>
 
+        <!-- Seção Login -->
         <section class="secao-login">
             <h2>Entrar na sua conta</h2>
-            <form class="form-login" action="" method="POST">
-                <input type="hidden" name="login" value="1"> 
+            <form class="form-login" action="#" method="POST">
 
                 <label for="email_login">E-mail:</label>
                 <input type="email" id="email_login" name="email_login" placeholder="Digite seu e-mail" required>
@@ -254,6 +251,7 @@ $conn->close();
         </section>
     </main>
 
+    <!-- Rodapé -->
     <footer class="footer">
         <p><strong>Projeto Acadêmico UMC - Pet-code</strong> | Mogi das Cruzes - SP</p>
         <p>Integrantes: Ana Julia Pinheiro da Silva, Giovanni Almeida Santos, Evelyn Kraus dos Santos.</p>
