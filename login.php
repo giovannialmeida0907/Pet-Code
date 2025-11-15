@@ -160,7 +160,7 @@ $conn->close();
                 <ul>
                     <li><a href="index.html">Início</a></li>
                     <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="cadastro.html">Cadastrar</a></li>
+                    <li><a href="login.php">Cadastrar</a></li>
                     <li><a href="comunidade.html">Comunidade</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
@@ -185,6 +185,7 @@ $conn->close();
             <p>Cadastre-se para acessar todos os recursos da plataforma e interagir com outros tutores!</p>
 
             <form class="form-cadastro" action="#" method="POST">
+                <input type="hidden" name="register" value="1">
 
                 <h3>
                     <img src="Imagens/icons8-pessoa-do-sexo-masculino-64-cadastro.png" alt="Ícone person cadastro">
@@ -224,7 +225,7 @@ $conn->close();
                 <input type="text" name="nome_pet" placeholder="Nome do pet">
                 <input type="text" name="especie" placeholder="Espécie (ex: cão, gato)">
                 <input type="number" name="idade" placeholder="Idade do pet (em anos)" min="0" max="20">
-                <input type="number" name="idade" placeholder="Idade do pet" min="0">
+             
 
                 <button type="submit" class="btn btn-principal">Cadastrar</button>
                 <p class="texto-login">Já tem uma conta? <a href="#">Faça login</a></p>
@@ -235,6 +236,7 @@ $conn->close();
         <section class="secao-login">
             <h2>Entrar na sua conta</h2>
             <form class="form-login" action="#" method="POST">
+                  <input type="hidden" name="login" value="1">
 
                 <label for="email_login">E-mail:</label>
                 <input type="email" id="email_login" name="email_login" placeholder="Digite seu e-mail" required>
