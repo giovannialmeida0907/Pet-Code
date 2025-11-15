@@ -138,6 +138,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
 $conn->close();
 
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -169,6 +170,12 @@ $conn->close();
 
     <!-- Conteúdo Principal -->
     <main class="container">
+
+        <?php if (!empty($message)): ?>
+            <div class="message-<?php echo $message_type; ?>">
+                <?php echo $message; ?>
+            </div>
+        <?php endif; ?>
 
         <!-- Seção Cadastro -->
         <section class="secao-cadastro">
