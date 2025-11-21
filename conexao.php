@@ -1,9 +1,9 @@
 <?php 
 
-$hostname = "localhost";
+$hostname = "gondola.proxy.rlwy.net"; 
 $bancodedados = "cadastro";
 $usuario = "root";
-$senha = "";
+$senha = "AVXdHsTinBMCgzCUzCREWXdqFoDbqSaw";
 $table_name = "usuario";
 
 function conectar_banco() {
